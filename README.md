@@ -1,23 +1,34 @@
-AirBnB clone - The console
+![airbnb](https://user-images.githubusercontent.com/60371335/183240794-ac0e13a9-15fc-49c2-bbef-8534b0689e48.png)
 
-The AirBnB is a shell project which runs in the console. It runs in both interactive and non-interactive modes
+# AirBnB clone - The console <br> 
+The goal of this project is to create a basic clone of AirBnB, which operates in both interactive and non-interactive modes.
 
-The command interpeter console is used to manipulate the powerful storage system. The storage gives abstraction between the object and how they are stored.
+# command interpreter or console 
 
-The command does the following:
+Utilizing a robust storage system is the first step. We will be able to abstract between "My Object" and "How they are saved and persisted" thanks to this storage engine. This implies that you won't have to pay attention to (take care of) how your objects are saved from your console code (the command interpreter itself) or from the front-end and RestAPI you will write later.
 
-    Create a new object (ex: a new User or a new Place)
-    Retrieve an object from a file, a database etc…
-    Do operations on objects (count, compute stats, etc…)
-    Update attributes of an object
-    Destroy an object
+# how to start it:
 
-Each task is linked and will help you to:
-
-    put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
-    create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
-    create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel
-    create the first abstracted storage engine of the project: File storage.
-    create all unittests to validate all our classes and storage engine
+In order to start the console, you must use the following command: ./console.py
 
 
+# How to use: 
+
+ * manage (create, update, destroy, etc) objects via a console / command interpreter
+ * store and persist objects to a file (JSON file)
+ * Commands: create, show, destroy, all (shows all), update, help, quit
+ 
+
+### Example how to open:
+> $ ./console.py <br>
+> (hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+ 
+<br>
+(hbnb) <br>
+(hbnb) <br>
+(hbnb) quit
+$
